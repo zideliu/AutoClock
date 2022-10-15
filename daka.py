@@ -119,7 +119,7 @@ class AutoDaka:
         try:  # 提交位置信息
             area_element = WebDriverWait(driver, 10).until(
                 EC.element_to_be_clickable(
-                    (By.XPATH, "/html/body/div[1]/div[1]/div/section/div[4]/ul/li[10]/div/input"))
+                    (By.XPATH, "/html/body/div[1]/div[1]/div/section/div[4]/ul/li[11]/div/input"))
             )
             area_element.click()
             print("地理位置信息已提交")
@@ -131,7 +131,7 @@ class AutoDaka:
         try: # 提交管控信息
             control_measure = WebDriverWait(driver, 10).until(
                 EC.element_to_be_clickable(
-                    (By.XPATH,"/html/body/div[1]/div[1]/div/section/div[4]/ul/li[25]/div/div/div[2]/span[1]")
+                    (By.XPATH,"/html/body/div[1]/div[1]/div/section/div[4]/ul/li[26]/div/div/div[2]/span[1]")
                 )
             )
             control_measure.click()
@@ -143,7 +143,7 @@ class AutoDaka:
         try:
             commit = WebDriverWait(driver, 20).until(
                 EC.element_to_be_clickable((By.XPATH, 
-                                    '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[27]/div/div/div/span[1]/i'))) 
+                                    '/html/body/div[1]/div[1]/div/section/div[4]/ul/li[28]/div/div/div/span[1]/i'))) 
             commit.click()
         except Exception as error:
             print('commit wrong...\n', error)
