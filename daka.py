@@ -108,7 +108,7 @@ class AutoDaka:
         print("实习信息填写中...")
         try:
             inPractice =  WebDriverWait(driver, 10).until(
-                EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div[1]/div/section/div[4]/ul/li[7]/div/div/div[3]/span[1]")))
+                EC.element_to_be_clickable((By.XPATH, "/html/body/div[1]/div[1]/div/section/div[4]/ul/li[8]/div/div/div[3]/span[1]")))
             inPractice.click()
             print("实习信息已提交")
         except Exception as error:
